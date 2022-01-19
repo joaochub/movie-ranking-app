@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  /* Colors: */
+  --mr-color-012433: #012433;
+  --mr-color-386071: #386071;
+  --mr-color-e36650: #e36650;
+  --mr-color-21b3cf: #21b3cf;
+  --mr-color-ffffff: #ffffff;
+  --mr-color-78849e66: #78849e66;
+  --mr-color-78849e: #78849e;
+  --mr-color-00baff: #00baff;
+  --mr-color-0b749b: #0b749b;
+  --mr-color-536b7a: #536b7a;
+  --mr-color-9aaebb66: #9aaebb66;
+  --mr-color-01243366: #01243366;
+  --mr-color-718fa2: #718fa2;
+  --mr-color-78849eb9: #78849eb9;
+  --mr-color-164e78: #164e78;
+
+  /* Font/text values */
+  --mr-font-weight-300: 300;
+  --mr-font-weight-600: 600;
+  --mr-font-weight-normal: normal;
+  --mr-font-weight-bold: bold;
+  --mr-font-size-8: 8px;
+  --mr-font-size-10: 10px;
+  --mr-font-size-12: 12px;
+  --mr-font-size-14: 14px;
+  --mr-font-size-16: 16px;
+  --mr-font-size-32: 32px;
+  --mr-line-spacing-19: 19px;
+  --mr-line-spacing-24: 24px;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  width: 100%;
+  max-width: 1366px;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: var(--mr-color-012433);
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: var(--mr-font-weight-normal);
+  color: var(--mr-color-386071);
+  text-align: left;
+}
+
+main {
+  max-width: 940px;
+  margin: 24px auto 0;
+}
+
+.revenue_button_container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin: 32px 0 46px;
+  align-items: center;
+}
+
+.status_container {
+  color: var(--mr-color-e36650);
+  font-size: var(--mr-font-size-16);
+}
+
+.loading {
+  transform-origin: 12px 13px;
+  animation: spinner 1s linear infinite;
+}
+
+.modal_loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.top_ten_rev_year_modal > div {
+  max-width: 178px;
+  margin-top: 135px;
+  left: -95px;
+  transition: left 0.8s;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .top_ten_rev_year_modal > div {
+    left: 0;
+  }
+}

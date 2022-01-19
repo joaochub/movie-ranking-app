@@ -1,0 +1,28 @@
+.mr_table {
+  display: grid;
+  border-collapse: collapse;
+  grid-template-columns: 1fr 5fr 2fr 3fr 1fr;
+  overflow-y: auto;
+  /* Only works in Chrome */
+  /* overflow-y: overlay; */
+  max-height: 480px;
+}
+
+.mr_table thead,
+.mr_table tbody,
+.mr_table tr {
+  display: contents;
+}
+
+.mr_table th {
+  color: var(--mr-color-0b749b);
+  font-size: var(--mr-font-size-10);
+  font-weight: var(--mr-font-weight-bold);
+  text-transform: uppercase;
+  padding: 0 18.5px 4.5px;
+  border-bottom: 1px solid var(--mr-color-0b749b);
+  position: sticky;
+  top: 0;
+  text-align: left;
+  background-color: var(--mr-color-ffffff);
+}

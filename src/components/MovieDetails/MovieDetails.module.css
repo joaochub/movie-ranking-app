@@ -1,0 +1,28 @@
+.movie_details_wrapper {
+  padding: 30px 58px 17px;
+}
+
+.movie_details_container {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.movie_details_title {
+  font-size: var(--mr-font-size-32);
+  font-weight: var(--mr-font-weight-300);
+  color: var(--mr-color-164e78);
+}
+
+.movie_details_title::after {
+  content: "";
+  border-bottom: 2px solid var(--mr-color-21b3cf);
+  width: 52px;
+  margin: 16px 0;
+  display: block;
+}
+
+.movie_details_names_container {
+  display: flex;
+  gap: 48px;
+}

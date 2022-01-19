@@ -1,0 +1,20 @@
+.button {
+  background-color: var(--mr-color-ffffff);
+  border: 1px solid var(--mr-color-78849e66);
+  border-radius: 20px;
+  font-size: var(--mr-font-size-12);
+  line-height: 14px;
+  font-weight: var(--mr-font-weight-300);
+  text-align: center;
+  color: var(--mr-color-78849e);
+  padding: 7px 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.button:hover,
+.button.active {
+  background-color: var(--mr-color-00baff);
+  color: var(--mr-color-012433);
+  font-weight: var(--mr-font-weight-600);
+}

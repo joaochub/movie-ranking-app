@@ -1,0 +1,31 @@
+.years_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.years_container > p {
+  color: var(--mr-color-78849eb9);
+  font-size: var(--mr-font-size-12);
+  margin: 16px auto 18px;
+}
+
+.years {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.years > button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  color: var(--mr-color-536b7a);
+  font-size: var(--mr-font-size-14);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.years > button:hover {
+  color: var(--mr-color-00baff);
+}

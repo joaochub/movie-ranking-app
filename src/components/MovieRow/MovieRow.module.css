@@ -1,0 +1,18 @@
+.mr_table__tr > td {
+  color: var(--mr-color-536b7a);
+  font-size: var(--mr-font-size-16);
+  padding: 13px 18.5px;
+  border-bottom: 1px solid var(--mr-color-9aaebb66);
+}
+
+.mr_table__tr > td:first-child {
+  text-align: center;
+}
+
+.mr_table__tr > td > button {
+  background: url("../../assets/view-icon.svg") no-repeat center/contain;
+  width: 15px;
+  height: 13px;
+  border: none;
+  cursor: pointer;
+}
