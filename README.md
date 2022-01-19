@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Steps to run:
+
+1. Download and open this project in your local machine.
+2. In the project directory, run yarn in the terminal to install all the dependencies.
+3. Ready to go...
+
 ## Available Scripts
 
 In the project directory, you can run:
