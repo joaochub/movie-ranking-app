@@ -1,8 +1,15 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
+import selectionReducer, { initialState } from "./features/selectionReducer";
+import { StateProvider } from "./components/StateProvider";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe("App", () => {
+  it("should render the App component", () => {
+    render(
+      <StateProvider initialState={initialState} reducer={selectionReducer}>
+        <App />
+      </StateProvider>
+    );
+    expect(screen.getByRole("heading")).toHaveTextContent(/movie ranking/i);
+  });
 });
