@@ -34,5 +34,6 @@
 
   .mr_table__tr > td:last-child {
     text-align: center;
+    border-bottom: 1px solid var(--mr-color-0b749b);
   }
 }
