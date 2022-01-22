@@ -109,4 +109,9 @@ main {
   .top_ten_rev_year_modal > div {
     left: 0;
   }
+
+  .heading,
+  .revenue_button_container {
+    padding: 0 18.5px;
+  }
 }

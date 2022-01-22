@@ -1,5 +1,5 @@
 .modal {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -36,4 +36,10 @@
 
 .modal_content .close_btn span {
   padding-top: 25px;
+}
+
+@media screen and (max-width: 640px) {
+  .modal_content {
+    margin-top: 0;
+  }
 }

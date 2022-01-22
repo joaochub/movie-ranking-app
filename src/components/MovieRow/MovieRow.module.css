@@ -16,3 +16,23 @@
   border: none;
   cursor: pointer;
 }
+
+@media screen and (max-width: 640px) {
+  .mr_table__tr > td::before {
+    content: attr(data-label);
+    color: var(--mr-color-0b749b);
+    font-size: var(--mr-font-size-10);
+    font-weight: var(--mr-font-weight-bold);
+    text-transform: uppercase;
+    display: grid;
+  }
+
+  .mr_table__tr > td,
+  .mr_table__tr > td:first-child {
+    text-align: center;
+  }
+
+  .mr_table__tr > td:last-child {
+    text-align: center;
+  }
+}

@@ -20,10 +20,12 @@ const MovieRow = ({ movie }) => {
 
   return (
     <tr className={movieRowStyles.mr_table__tr}>
-      <td>{movie?.rank}</td>
-      <td>{movie?.title}</td>
-      <td>{movie?.year}</td>
-      <td>{movie?.revenue ? `$${movie?.revenue}` : "----"}</td>
+      <td data-label="ranking">{movie?.rank}</td>
+      <td data-label="title">{movie?.title}</td>
+      <td data-label="year">{movie?.year}</td>
+      <td data-label="revenue">
+        {movie?.revenue ? `$${movie?.revenue}` : "----"}
+      </td>
       <td>
         <button onClick={() => handleClick(movie?.id)}></button>
       </td>

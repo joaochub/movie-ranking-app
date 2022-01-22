@@ -26,3 +26,18 @@
   text-align: left;
   background-color: var(--mr-color-ffffff);
 }
+
+@media screen and (max-width: 640px) {
+  .mr_table {
+    grid-template-columns: 1fr;
+  }
+
+  .mr_table thead {
+    display: none;
+  }
+
+  .mr_table tbody tr {
+    display: grid;
+    border-bottom: 1px solid var(--mr-color-0b749b);
+  }
+}
